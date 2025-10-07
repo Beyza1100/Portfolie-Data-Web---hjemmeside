@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rejseplanen (simpel kopi)</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- Topmenu med mit eget logo -->
+<header class="top-bar">
+    <img src="./rejseplanlogo.png" alt="Rejseplanen logo" class="logo" />
+    <nav>
+        <a href="#">Find en rejse</a>
+        <a href="#">Afgangstavler</a>
+        <a href="#">Beta</a>
+    </nav>
+</header>
+
+<!-- Hero-sektion med baggrundsbillede -->
+<section class="hero">
+
+    <!-- Hvid søge-boks -->
+    <form class="card" action="#" method="get">
+        <h2>Rejs: i Danmark</h2>
+
+        <div class="input-group">
+            <label for="from">Fra</label>
+            <input id="from" name="from" type="text" placeholder="Fx. København H" required />
+        </div>
+
+        <div class="input-group">
+            <label for="to">Til</label>
+            <input id="to" name="to" type="text" placeholder="Fx. Aarhus C" required />
+        </div>
+
+        <div class="row">
+            <label class="sr-only" for="date">Afgang</label>
+            <input id="date" name="date" type="datetime-local" />
+            <button class="find-btn" type="submit">Find</button>
+        </div>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© Rejseplanen | Hjælp | Privatliv & cookies</p>
+
+
+</footer>
+</body>
+</html>
